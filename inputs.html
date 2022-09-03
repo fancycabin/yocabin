@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<!--dir 是direction 表示文字默认显示方向 -->
+
+<head>
+  <meta charset="utf-8">
+  <title>💚html笔记与随堂作业💚</title>
+</head>
+
+<body>
+
+  <a href="#表单1">
+    <h2 id="表单2">表单</h2>
+  </a>
+  <hr>
+  <form class="" action="maito:sleeplesssprite@gmail.com" method="post" enctype="text/plain">
+    <input type="file" name="" value="">
+    <br>
+    <input type="date" name="" value="">
+    <br>
+    <input type="radio" name="" value="">
+    <br>
+    <input type="range" name="" value="">
+    <br>
+    <input type="checkbox" name="" value="">
+    <br>
+    <input type="color" name="" value="">
+    <br>
+    <input type="text" name="name" value="">
+    <br>
+    <input type="email" name="email" value="">
+    <br>
+    <input type="password" name="" value="">
+    <br>
+    <input type="submit" name="" value="はい　はい">
+  </form>
+  <hr>
+  <br>
+  <h2>删除线，下划线，强调，斜体</h2>
+  <p>
+    <del>这是一个删除线del，表强调,常用这个</del><br>
+    <s>这也是一个删除线s</s><br>
+    <ins>这是下划线ins，表强调，常用这个</ins><br>
+    <u>这也是下划线u</u>
+    <strong>这是表粗体表强调strong，常用这个 </strong> <br>
+    <b>这也是粗体b</b> <br>
+    <em>这是斜体表强调em，常用这个</em> <br>
+    <i>这也是斜体i</i>
+    <hr>
+  </p>
+  <h2>div和span</h2>
+  <p>
+    <strong>定义：</strong>
+    <br>
+    1.&ltdiv&gt和&ltspan&gt是没有语义的，它们就是一个盒子，用来装内容的 <br>
+    2.&ltdiv&gt这是头部&lt/div&gt用来布局，大盒子, &ltspan&gt今日价格&lt/span&gt一行可以多个&ltspan&gt，小盒子 <br>
+    例如： <br>
+  <div class="">
+    今日价格
+  </div>
+  <span>今日蛋奶肉</span> <span>今日蔬菜</span>
+  </p>
+  <hr>
+  <h2>HTML中的注释和特殊字符</h2>
+  <p>
+    在HTML页面中，一些特殊的字符很难或者不方便直接使用，此时我们就可以使用下面的字符来替代
+  </p>
+  <table align="left" cellpadding="20" cellspacing="0" border="1" width="500">
+    <thead>
+      <th>特殊字符</th>
+      <th>描述</th>
+      <th>字符的代码</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1</td>
+        <td>空格符</td>
+        <td>1&nbsp1</td>
+      </tr>
+      <tr>
+        <td>
+          < </td>
+        <td>小于号</td>
+        <td>&lt</td>
+      </tr>
+      <tr>
+        <td>></td>
+        <td>大于号</td>
+        <td>&gt</td>
+      </tr>
+    </tbody>
+    <tfoot>
+    </tfoot>
+  </table>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br><br><br><br><br><br><br>
+  <h2>合并单元格</h2>
+  <p>合并单元格方式</p>
+  <ul>
+    <li>跨行合并:<strong><em><ins>rowspan</ins></em></strong>=“合并单元格的个数”</li>
+    <li>跨列合并:<strong><em><ins>colspan</ins></em></strong>="合并单元格的个数"</li>
+  </ul>
+  <p>目标单元格：（写合并代码） </p>
+  <ul>
+    <li>跨行：最上侧单元格为目标单元格，写合并代码</li>
+    <li>跨列：最左侧单元格为目标单元格，写合并代码</li>
+    <li>
+      <em>
+        <strong>
+          <ins>比如：&lttd colspan="2"&gt&lt/td&gt,记得删除多余的单元格</ins>
+        </strong>
+      </em>
+    </li>
+  </ul>
+  <table border="1" cellpadding="20" cellspacing="0" width="500" align="left">
+    <thead>
+      <th></th>
+      <th colspan="2"></th>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2"></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <br><br><br><br><br><br>
+  <h2>列表标签</h2>
+  <p><strong><ins>无序列表:&ltul&gt（非常重要）</ins></strong></p>
+  <p>有序列表:&ltol&gt（了解即可）</p>
+  <p>
+    <em>
+      <strong>
+        <ins>
+          自定义列表:&ltdl&gt(非常重要)
+        </ins>
+      </strong>
+    </em>
+  </p>
+  <ul>
+    <li>&ltdl&gt:description list</li>
+    <li>&ltdt&gt:defination term</li>
+    <li>&ltdd&gt:description</li>
+    <li>
+      <strong>dl里面只能包含dt和dd</strong>
+    </li>
+    <li>
+      <strong>dt和dd个数没有限制，通常是一个dt对应多个dd</strong>
+    </li>
+    <li>
+      <dl class="">
+        <dt>联系我们</dt>
+        <dd>新浪微博</dd>
+        <dd>腾讯微博</dd>
+        <dd>微信公众号</dd>
+        <dd>github</dd>
+        <dd>邮件</dd>
+      </dl>
+    </li>
+  </ul>
+  <p>列表总结:</p>
+  <table align="left" border="1" cellpadding="20" cellspacing="0" width="700">
+    <thead>
+      <th>标签名</th>
+      <th>定义</th>
+      <th>说明</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>&ltul&gt&lt/ul&gt</td>
+        <td>无序标签</td>
+        <td>里面只能包含&ltli&gt，没有顺序，使用较多，&ltli&gt里面可以包含任何标签</td>
+      </tr>
+      <tr>
+        <td>&ltul&gt&lt/ul&gt</td>
+        <td>有序标签</td>
+        <td>里面只能包含&ltli&gt，有顺序，使用较少，&ltli&gt里面可以包含任何标签</td>
+      </tr>
+      <tr>
+        <td>&ltul&gt&lt/ul&gt</td>
+        <td>自定义标签</td>
+        <td>里面只能包含&ltdt&gt和&ltdd&gt，&ltdt&gt和&ltdd&gt里面可以放任何标签</td>
+      </tr>
+    </tbody>
+  </table>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <a href="#表单2">
+    <h2 id="表单1">表单标签</h2>
+  </a>
+  <ul>
+    <li>
+      <p>表单的组成：在HTML中，一个完整的表单通常由表单域、表单控件（也称为表单元素）和提示信息三个部分构成。</p>
+      <ul>
+        <li>
+          <p>
+            <strong>表单域：</strong>
+            表单的整个区域。用&ltform&gt标签用于定义表单域，以实现用户信息的收集和传递。&ltform&gt会把它范围内的表单元素信息提交给服务器
+          </p>
+      </ul>
+      <ul>
+        <li>
+          <p>
+            <strong>表单控件</strong>
+            （表单元素）：
+            &nbsp&nbsp&nbsp
+          <form class="" action="index.html" method="post" name="表单控件">
+            <input type="Name" name="" value="">
+          </form>
+          <ol>
+            <li>
+              <a href="#input">input输入表单元素</a>
+            </li>
+            <li>
+              <a href="#select"> select下拉表单元素</a>
+            </li>
+            <li>
+              <a href="#textarea">textarea文本域元素</a>
+            </li>
+          </ol>
+          </p>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <p><strong>提示信息：</strong>
+          <form class="" action="index.html" method="post">
+            <label for="">yourName</label>
+          </form>
+          </p>
+        </li>
+    </li>
+  </ul>
+  </li>
+  <li id="input">
+    &ltinput&gt输入表单元素：在input标签中，包含一个type属性，input为单标签。type属性的属性值及其描述如下
+    <br>
+    <br>
+    <table align="left" border="1" cellspacing="0" cellpadding="10" width="500">
+      <thead>
+        <th>属性值</th>
+        <th>描述</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>button</td>
+          <td>定义可点击按钮（多数情况下，通过js启动脚本）</td>
+        </tr>
+        <tr>
+          <td>checkbox</td>
+          <td>定义复选项</td>
+        </tr>
+        <tr>
+          <td>file</td>
+          <td>定义输入字段和“浏览”按钮，供文件上传</td>
+        </tr>
+        <tr>
+          <td>hidden</td>
+          <td>定义隐藏的输入字段</td>
+        </tr>
+        <tr>
+          <td>image</td>
+          <td>定义图像形式的提交按钮</td>
+        </tr>
+        <tr>
+          <td>password</td>
+          <td>定义密码字段。该字段中的字符被掩码</td>
+        </tr>
+        <tr>
+          <td>radio</td>
+          <td>定义单选按钮</td>
+        </tr>
+        <tr>
+          <td>reset</td>
+          <td>定义重置按钮，重置按钮会清除表单中的所有数据</td>
+        </tr>
+        <tr>
+          <td>submit</td>
+          <td>定义提交按钮，提交按钮会把表单的数据发到服务器</td>
+        </tr>
+        <tr>
+          <td>text</td>
+          <td>定义单行的输入字段，用户可在其中输入文本，默认宽度为20个字符</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br>
+    <ul>
+      <form class="" action="xxx.php" method="get" enctype="text/plain">
+        <li>
+          <label for="name">用户名:</label>&nbsp
+          <input type="text" name="username" value="请输入用户名" maxlength="20" id="name" required>
+        </li>
+        <li>
+          密码：&nbsp&nbsp&nbsp<input type="password" name="pwd" value="" id="Password" required>
+        </li>
+        <li>
+          邮箱：&nbsp&nbsp <input type="text" name="email" value="" id="email" requird>
+        </li>
+        <li>
+          <!--radio 单选按钮 也可以实现多选 如果name=“这里不输入radio”，即可实现多选-->
+          <!--radio 单选按钮 每一个性别单选按钮的表单名字name都必须保持一致，才可以实现多选1-->
+          性别： &nbsp男<input type="radio" name="sex" value="男">女 <input type="radio" name="sex" value="女" checked="checked">无性别<input type="radio" name="sex" value="无">
+        </li>
+        <li>
+          <!--checkbox 复选框 也可以单选 -->
+          爱好：&nbsp&nbsp看书<input type="checkbox" name="hobby" value="看书" checked="checked">
+          学习<input type="checkbox" name="hobby" value="学习">
+          音乐<input type="checkbox" name="hobby" value="音乐">
+          散步<input type="checkbox" name="hobby" value="散步">
+        </li>
+        <li>
+          <!--submit 点击了提交按钮，可把表单域里面的表单元素里的值提交给后台服务器 -->
+          提交：&nbsp <input type="submit" name="提交" value="はい">
+        </li>
+        <li>
+          <!--reset 重置按钮，可以把表单元素里的所有值全部清零重置恢复默认值-->
+          重置：&nbsp <input type="reset" name="重置" value="reset">
+        </li>
+        <li>
+          <!--button 普通按钮 后期结合js搭配使用-->
+          button:&nbsp<input type="button" name="" value="获取短信验证码">
+        </li>
+        <li>
+          <!--file 文件域 上传文件使用-->
+          file:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="file" name="" value="上传头像">
+        </li>
+        <li>
+          国籍:&nbsp&nbsp&nbsp&nbsp<select class="" name="nationality">
+            <option value="China">中国</option>
+            <option value="US">美国</option>
+            <option value="UK">英国</option>
+            <option value="Canada">加拿大</option>
+            <option value="Russia">俄罗斯</option>
+            <option value="Belarus">白俄罗斯</option>
+          </select>
+        </li>
+        <li>
+          评论: &nbsp&nbsp&nbsp<textarea name="comments" rows="8" cols="40">请在这里写下评论</textarea>
+        </li>
+      </form>
+    </ul>
+  </li>
+  <br>
+  <li>
+    除type属性外，&ltinput&gt标签还有其他很多属性，其常用属性如下：
+    <br>
+    <br>
+    <table border="1" cellspacing="0" cellpadding="10" align="left">
+      <thead>
+        <th>属性</th>
+        <th>属性值</th>
+        <th>描述</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>name</td>
+          <td>由用户自定义</td>
+          <td>定义input元素的名称</td>
+        </tr>
+        <tr>
+          <td>value</td>
+          <td>由用户自定义</td>
+          <td>规定input元素的值</td>
+        </tr>
+        <tr>
+          <td>checked</td>
+          <td>checked</td>
+          <td>规定此input元素首次加载时应当被选中</td>
+        </tr>
+        <tr>
+          <td>maxlength</td>
+          <td>正整数</td>
+          <td>规定输入字段中的字符的最大长度</td>
+        </tr>
+      </tbody>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br>
+    <br>
+  </li>
+  <p>1.name和value是每个表单元素都有的属性值，主要给后台人员使用</p>
+  <p>2.name是表单元素的名字，<strong>要求单选按钮和复选框都要有相同的name值</strong></p>
+  <p>3.单选按钮和复选框都可以设置checked属性，当页面打开的时候就可以默认选中这个按钮</p>
+  <p>4.maxlength就是默认最多可以输入字符的长度</p>
+  <br>
+  <li>
+    <h3>
+      &ltlabel&gt标签为input元素定义标注（标签）
+    </h3>
+    <p>
+      &ltlabel&gt标签用于绑定一个表单元素，当点击&ltlabel&gt标签内的文本时，浏览器就会自动将焦点（光标）转到或者选择对应的表单元素上，用来增加用户体验。
+    </p>
+    <p>
+      语法： <br>
+      &ltlabel
+      <em><strong>for="sex"</strong></em>
+      &gt女&ltlabel&gt<br>
+      &ltinput type="radio" name="sex"
+      <em><strong>id="sex"</strong></em>
+      /&gt
+    <p>🌟：&ltlabel&gt标签的<strong><em>for属性</em></strong>应当与相关元素的<strong><em>id属性</em></strong>相同。
+    </p>
+    </p>
+  </li>
+  <li>
+    <h3 id="select">
+      &ltselct&gt下拉表单元素
+    </h3>
+    <p>
+      使用场景：在页面中，如果有多个选项让用户选择，并且想要节约页面空间时，我们可以使用&ltselect&gt标签空间定义下拉列表。
+    <p>
+      <strong>语法：</strong> <br>
+      &ltselect&gt <br>
+      &ltoption&gt选项1&lt/option&gt <br>
+      &ltoption&gt选项1&lt/option&gt <br>
+      &ltoption&gt选项1&lt/option&gt <br>
+      ...
+      &lt/select&gt
+    </p>
+    <p>🌟&ltselect&gt中至少包含一对&ltoption&gt<br>
+      🌟在&ltoption&gt中定义selected=“selected”时，当前项即为默认选中项。
+    </p>
+    </p>
+  </li>
+
+  <li>
+    <h3 id="textarea">&lttextarea&gt文字域表单元素</h3>
+    <p> <strong>语法：</strong> <br>
+      &lttextarea rows="3" cols="20"&gt <br>
+      文本内容 <br>
+      &lt/textarea&gt
+      <br>
+      🌟通过&lttextarea&gt标签可以轻松地创建多行文本输入框 <br>
+      🌟cols="每行中的字符数"，rows=“显示的行数”， <strong><em>我们在实际开发中不会使用，都是用css来改变大小。</em></strong>
+    </p>
+  </li>
+  </ul>
+</body>
+
+</html>
+
+<!-- <form class="" action="index.html" method="post">
+  <label for="name">Your name:</label>
+  <input type="text" name="name" id="name" required value="">
+  <input type="color" name="" value="">
+  <br>
+  <label for="email">Your email:</label>
+  <input type="email" name="email" id="email" required value="">
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" name="password" value="">
+  <br>
+  <label for="">Do you want to sign up to the email list?</label>
+  <input type="checkbox" name="" value="">
+  <br>
+  <input type="submit" value="はい　はい"
+  <br>
+  <input type="file" name="" value="">
+  </form>-->
